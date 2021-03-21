@@ -16,7 +16,6 @@ import lombok.extern.slf4j.Slf4j;
 
 //import jdk.internal.org.jline.utils.Log;
 
-
 @RestController
 @RequestMapping("/products")
 @Slf4j
@@ -26,7 +25,7 @@ public class ProductController {
 	
 	@PostMapping("/")
 	public Product saveProduct(@RequestBody Product product) {
-		//Log.info("Inside save Produt method");
+		//log.info("Inside save Product method");
 		return productService.saveProduct(product);
 	}
 	

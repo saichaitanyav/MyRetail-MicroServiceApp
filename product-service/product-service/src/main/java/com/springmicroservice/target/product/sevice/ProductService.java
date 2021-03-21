@@ -9,6 +9,9 @@ import com.springmicroservice.target.product.VO.RestTemplateVO;
 import com.springmicroservice.target.product.entity.Product;
 import com.springmicroservice.target.product.repository.ProductRepository;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class ProductService {
 
@@ -19,7 +22,6 @@ public class ProductService {
 	private ProductRepository productRepository;
 
 	public Product saveProduct(Product product) {
-		// log.info("Inside saveProduct of ProductService");
 		return productRepository.save(product);
 	}
 
@@ -30,7 +32,7 @@ public class ProductService {
 	public RestTemplateVO getProductWithPrice(Long productId) {
 		RestTemplateVO productPrice = new RestTemplateVO();
 		Product product = productRepository.findByProductId(productId);
-		String uri = "http://localhost:9002/price/";
+		String uri = "http://PRICE-SERVICE/price/";
 		Price price = restTemplate.getForObject(uri+product.getPriceId(), Price.class);
 		productPrice.setProduct(product);
 		productPrice.setPrice(price);
