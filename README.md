@@ -17,14 +17,14 @@ Pre-requisite:  Install Postgres, maven, JDK, JRE,Postman
 2. In Product-service, update the application.yml with the port number of your local port and DB details of the postgres.
 3. In Price-service, update the application.yml with the port number of your local port and DB details of the postgres
 4. Config server is accessed at https://github.com/saichaitanyav/config-server/
-5. Run the microservices 
-    1.product-service,
-    2.price-service, 
-    3.cloud-gateway, 
+5. ## Run the below microservices either using the command line jar (or) by spring boot run command
+    1. product-service,
+    2. price-service, 
+    3. cloud-gateway, 
         a. circuitbreaker and fall back methods implemented.
-    5.service-registry,
-    6.hystrix-dashboard,
-    7.config-server
+    5. service-registry,
+    6. hystrix-dashboard,
+    7. config-server
 7. In postman, access the endpoints through cloud API gateway port number(9191) and can be accessed through http://localhost:9191/products ,http://localhost:9191/price
 
 End points: 
