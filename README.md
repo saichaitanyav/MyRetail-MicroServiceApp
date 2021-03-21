@@ -13,7 +13,7 @@ Technologies Used:
 
 ## Steps to run the project 
 Pre-requisite:  Install Postgres, maven, JDK, JRE,Postman
-1. Clone the project  
+1. Clone this project   and clone the config server at https://github.com/saichaitanyav/config-server
 2. In Product-service, update the application.yml with the port number of your local port and DB details of the postgres.
 3. In Price-service, update the application.yml with the port number of your local port and DB details of the postgres
 4. Config server is accessed at https://github.com/saichaitanyav/config-server/
