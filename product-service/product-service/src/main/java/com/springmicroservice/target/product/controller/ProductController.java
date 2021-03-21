@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springmicroservice.target.product.VO.RestTemplateVO;
+import com.springmicroservice.target.product.VO.ProductPriceVO;
 import com.springmicroservice.target.product.entity.Product;
 import com.springmicroservice.target.product.sevice.ProductService;
 
@@ -35,7 +35,7 @@ public class ProductController {
 	}
 	
 	@GetMapping("/{productId}")
-	public RestTemplateVO getProductWithPrice(@PathVariable("productId") Long productId) {
+	public ProductPriceVO getProductWithPrice(@PathVariable("productId") Long productId) {
 		return productService.getProductWithPrice(productId);
 	}
 }
