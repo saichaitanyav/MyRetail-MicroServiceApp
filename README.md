@@ -17,7 +17,7 @@ Pre-requisite:  Install Postgres, maven, JDK, JRE,Postman
 2. In Product-service, update the application.yml with the port number of your local port and DB details of the postgres.
 3. In Price-service, update the application.yml with the port number of your local port and DB details of the postgres
 4. Config server is accessed at https://github.com/saichaitanyav/config-server/
-5. ## Run the below microservices either using the command line jar (or) by spring boot run command
+5. Run the below microservices either using the command line jar (or) by spring boot run command
     1. product-service,
     2. price-service, 
     3. cloud-gateway, 
