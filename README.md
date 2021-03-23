@@ -1,4 +1,6 @@
 # MyRetail: 
+https://github.com/saichaitanyav/microServiceApp is the my retail application which fetches products with price information , developed with spring boot micro services, java , maven, postgres.
+
 Publishes  REST API endpoints,  for creating/updating/retrieving products with price. 
 
 Technologies Used:
