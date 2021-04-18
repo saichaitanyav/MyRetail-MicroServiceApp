@@ -1,13 +1,19 @@
 package com.springmicroservice.target.product.VO;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Price {
+	public Price() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Price(Long priceId, String currencyCode, float priceValue) {
+		super();
+		this.priceId = priceId;
+		this.currencyCode = currencyCode;
+		this.priceValue = priceValue;
+	}
 	public Long getPriceId() {
 		return priceId;
 	}

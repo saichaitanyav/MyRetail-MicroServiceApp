@@ -9,15 +9,26 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Product {
 	@Id
 	private Long productId;
-	
+
 	private Long priceId;
+
 	public Long getProductId() {
 		return productId;
+	}
+
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Product(Long productId, Long priceId, String name) {
+		super();
+		this.productId = productId;
+		this.priceId = priceId;
+		this.name = name;
 	}
 
 	public void setProductId(Long productId) {
@@ -41,8 +52,5 @@ public class Product {
 	}
 
 	private String name;
-
-	
-	
 
 }
