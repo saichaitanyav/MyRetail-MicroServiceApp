@@ -3,13 +3,9 @@ package com.springmicroservice.target.price.entity;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
 public class Price {
 
@@ -39,6 +35,19 @@ public class Price {
 
 	@Id
 	private Long priceId;
+
+	public Price() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Price(Long priceId, String currencyCode, float priceValue) {
+		super();
+		this.priceId = priceId;
+		this.currencyCode = currencyCode;
+		this.priceValue = priceValue;
+	}
+
 	private String currencyCode;
 	private float priceValue;
 
